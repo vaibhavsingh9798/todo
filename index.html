@@ -4,18 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
-    <form id="form">
-        <lable for="todoName">TodoName</lable>
-        <input type="text" id="todoName" />
-        <lable for="todoName">Description</lable>
-        <input type="text" id="todoDes" />
-        <input type="button" value="Add Item" id="add">
+    <div class="container">
+        <div id="main" class="card card-body">
+    <form id="form" class="form mb-3">
+        <lable for="todoName" class="mt-4">TodoName</lable>
+        <input type="text" id="todoName" class="mt-4"/>
+        <lable for="todoName" class="mt-4">Description</lable>
+        <input type="text" id="todoDes" class="mt-4"/>
+        <input type="button" value="Add Item" id="add" class="ml-4">
     </form>
-    <ul id="remaining">Todo Remaining</ul>
-    <ul id="done">Todo Done</ul>
+    <h6 class="title">Todo Remaining</h6>
+    <ul id="remaining" class="list-group mt-2">
+
+    </ul>
+    <h6 class="title">Todo Done</h6>
+    <ul id="done" class="list-group mt-2">
+
+    </ul>
+    </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <script src="main.js"></script>
 </body>
